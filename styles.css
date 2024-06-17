@@ -1,0 +1,38 @@
+ body {
+
+    margin:0px;
+    height:100vh;
+    width:100vw;
+    background-color:#A1C691;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+#mainBox {
+    display:flex;
+    flex-direction: column;
+    border-radius:5%;
+    height:600px;
+    width:450px;
+    background-color:white;
+}
+
+h1 {
+    padding-left:20px;
+}
+
+#labelAmount {
+    margin-left:65px;
+   
+}
+
+#amount {
+    border-radius:10px;
+    border: 1.5px gray solid;
+    padding:5px;
+    margin-left:65px;
+    height:50px;
+    width:300px;
+    margin-top:10px; 
+}
