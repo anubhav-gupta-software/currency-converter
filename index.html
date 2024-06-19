@@ -5,15 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Currency Converter</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <div id="mainBox">
-        <h1>Currency Converter</h1>
+    <div class="container">
+        <h2>Currency Converter</h2>
         <form>
-            <label for="amount" id="labelAmount">Enter Amount</label>
-            <br>
-            <input type="text" id="amount" name="amount" placeholder="Enter an amount to convert">
-        </form>
+        <div class="amount">
+            <p>Enter Amount</p>
+            <input value="100" type="text"/>
+        </div>
+        <div class="dropdown">
+            
+            <div class="from">
+                <p>From</p>
+                <div class="select-container">
+                    <img src="https://flagsapi.com/US/flat/64.png">
+                    <select name="from">
+                        <option value="USD">USD</option>
+                        <option value="INR">INR</option>
+                    </select>
+                </div>
+            </div>
+            <i class="fa-solid fa-arrow-right-arrow-left"></i>
+            <div class="to">
+                <p>To</p>
+                <div class="select-container">
+                    <img src="https://flagsapi.com/IN/flat/64.png">
+                    <select name="from">
+                        <option value="USD">USD</option>
+                        <option value="INR" selected>INR</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="msg">1 USD = 80 INR</div>
+        <button>Get Exchange Rate</button>
+    </form>
     </div>
 </body>
 <script src="app.js"></script>
