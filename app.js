@@ -13,5 +13,16 @@ for (code in countryList){
         option.selected = "selected";
     }
 }
+    options.addEventListener("change",(evt)=>{
+        console.log(evt.target.value);
+        updateFlag(evt.target);
+    }
+);
 }
 
+const updateFlag = (input)=>{
+    let code = input.value;
+    let countryCode = countryList[code];
+    let newsrc = `https://flagsapi.com/${countryCode}/flat/64.png`;
+    input.parentElement.querySelector("img").src = newsrc;
+};
